@@ -18,6 +18,7 @@ function App() {
     },
   }).then((response) => {
     setListOfCoins(response.data);
+    console.log(response.data);
   }).catch((error) => {
     console.error("Error fetching data:", error);
   });
